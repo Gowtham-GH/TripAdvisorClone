@@ -107,25 +107,53 @@
     cursor: pointer;
 }
 
-.Search_inline, .Hotels_inline, .ThingstoDo_inline, .Restaurants_inline, .Flights_inline, .HolidayHomes_inline{
+.FilterMenu__Search__highlighter{
     position:relative;
     top:5px;
     height:2px;
-    background-color: black;
-    display:none  
+    background-color: black; 
+    display:block
 }
 
-.Search_inline{
-    display: block;
+.Hotel:hover .FilterMenu__Hotels__highlighter{
+    position:relative;
+    top:5px;
+    height:2px;
+    background-color:black;
+    display:block
 }
 
-.FilterMenu__Hotels:hover .Hotels_inline{
-    display: block;
+.Thingstodo:hover .FilterMenu__Thingstodo__highlighter{
+    position:relative;
+    top:5px;
+    height:2px;
+    background-color:black;
+    display:block
 }
 
+.Restaurants:hover .FilterMenu__Restaurants__highlighter{
+    position:relative;
+    top:5px;
+    height:2px;
+    background-color:black;
+    display:block
+}
 
+.Flights:hover .FilterMenu__Flights__highlighter{
+    position:relative;
+    top:5px;
+    height:2px;
+    background-color:black;
+    display:block
+}
 
-
+.HolidayHomes:hover .FilterMenu__HolidayHomes__highlighter{
+    position:relative;
+    top:5px;
+    height:2px;
+    background-color:black;
+    display:block
+}
 /*media Quereis*/
 
 @media screen and (max-width:800px){
