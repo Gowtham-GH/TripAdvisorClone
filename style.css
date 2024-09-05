@@ -21,16 +21,19 @@
 
 .Header_Navigation{
     display:flex;
-    gap:20px;
+    gap:10px;
     cursor: pointer;
     align-items: center; 
-    padding:20px
+    padding:10px
 }
 .Header_Navigation button{
-    width:70px;
+    width:80px;
     background-color: white;
     border: none;
     cursor: pointer;
+    font-size: medium;
+    font-weight:inherit;
+    padding:5px
 }
 .Header_Navigation div{
     font-size:8;
@@ -154,6 +157,69 @@
     background-color:black;
     display:block
 }
+
+/*Search bar*/
+.SearchBar_container{
+   display:block;
+   position:relative;
+   top:20px;
+   width:750px;
+   margin: 0 auto
+
+}
+.Searchbar_outerbox{
+    display:flex;
+    justify-content: space-around;
+    height:50px;
+    align-items: center;
+    gap:5px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .15);
+    border:solid 2px #e0e0e0;
+    border-radius: 25px;
+    padding:5px
+   }
+
+.SearchBar_Input{
+    width: 600px;
+    border:none;
+}
+
+.SearchBar_Input:Focus{
+    outline: none;
+}
+
+.SearchBar__Button{
+    width:100px;
+    height:40px;
+    border-radius: 20px;
+    background-color: #84E9BD;
+    border:none
+
+}
+
+/*AI*/
+.AI{
+    position:relative;
+    top:70px;
+    background: linear-gradient(90deg, #d4dff7, #dcc8ff);
+    border-radius: 25px;
+    height:350px;
+    width:900px;
+    margin:0 auto
+}
+
+.AI__Img{
+    
+    height:350px;
+    width:900px;
+
+}
+
+.AI_Img img{
+    width: 100%;
+    height: 100%;
+}
+
 /*media Quereis*/
 
 @media screen and (max-width:800px){
