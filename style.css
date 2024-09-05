@@ -1,0 +1,147 @@
+* {
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 800;
+    font-style: inherit;
+    margin:0;
+    padding:0
+}
+
+.Header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position:relative;
+    height:100px
+    
+}
+
+.Header__logo {
+    Width: 150px;
+}
+
+.Header_Navigation{
+    display:flex;
+    gap:20px;
+    cursor: pointer;
+    align-items: center; 
+    padding:20px
+}
+.Header_Navigation button{
+    width:70px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+.Header_Navigation div{
+    font-size:8;
+}
+.Header_Navigation div:hover{
+    text-decoration: underline;
+}
+.Header_Navigation button:hover{
+    background-color: #f2f2f2;
+    color:black;
+    border-radius: 25px;
+    height:40px
+}
+.Header__Signin{
+    display:flex;
+    gap:20px;
+    cursor: pointer;
+}
+.Header_Site_Lang{
+    color:black;
+    display:flex;
+    justify-content: space-evenly;
+    gap:10px;
+    border-radius: 20px;
+    width:100px;
+    position:relative;
+    padding:5px;  
+}
+
+.Header_Site_Lang:hover{
+    background-color: #f2f2f2
+}
+.Header_Site_Lang__logo{
+    align-items: center;
+    height:22px;
+    width:22px;   
+}
+.line{
+    background-color: #e0e0e0;
+    width:1px;
+    align-items: center;
+}
+.Header__Signin__button{
+    width:80px;
+    color:white;
+    background-color: Black;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/*WhereTo*/
+
+.WhereTO{
+    display: flex;
+    font-size: 50px;
+    justify-content: center;
+    height:100px;
+    align-items: center;
+}
+
+/*FilterMenu*/
+
+.FilterMenu{
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+    gap:30px
+}
+
+.FilterMenu__HolidayHomes, .FilterMenu__Flights, .FilterMenu__IRestaurants, .FilterMenu__Thingstodo, .FilterMenu__Hotels, .FilterMenu__Search{
+    display:flex;
+    align-items: center;
+    gap:5px;
+    cursor: pointer;
+}
+
+.Search_inline, .Hotels_inline, .ThingstoDo_inline, .Restaurants_inline, .Flights_inline, .HolidayHomes_inline{
+    position:relative;
+    top:5px;
+    height:2px;
+    background-color: black;
+    display:none  
+}
+
+.Search_inline{
+    display: block;
+}
+
+.FilterMenu__Hotels:hover .Hotels_inline{
+    display: block;
+}
+
+/*media Quereis*/
+
+@media screen and (max-width:800px){
+    .Header_Site_Lang{
+        display:none
+    }
+    .Header_Navigation{
+        padding: 1px;
+    }
+}
+
+@media screen and (max-width:700px){
+    .Header_Site_Lang{
+        display:none
+    }
+    .Header_Navigation{
+        display:none
+    }
+}
+
+
+
